@@ -10,12 +10,12 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = { Config.class, })
-public class KlantRepositoryTest {
+public class ClientRepositoryTest {
 	@Autowired
-	private KlantRepository klantRepository;
+	private ClientRepository repository;
 
 	@Test
 	public void findAll() {
-		klantRepository.findAll(Arrays.asList(1L, 2L));
+		repository.findAll(Arrays.asList(1L, 2L));
 	}
 }
